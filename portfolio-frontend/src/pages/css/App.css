@@ -1,0 +1,502 @@
+.introductionDiv {
+    background: url("background.jpg") no-repeat center center/cover;
+    height: 95;
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+        
+}
+
+/*.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}*/
+
+.section-title {
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 20px;
+    color: #fff;
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/*#name {
+    position: float;
+    bottom: 10%;
+    right: 5%;
+}
+
+#about-me {
+    position: float;
+    bottom: 5%;
+    left: 5%;
+    
+}*/
+
+ header {
+     background-color: black;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+     font-family: Arial, sans-serif;
+ }
+
+ .App-header {
+     background-color: #282c34;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: calc(10px + 2vmin);
+     color: rgb(0, 1, 2);
+ }
+
+ /*Header section*/
+ /* Ensure text and links are visible on the dark background */
+ /* Retro Header Styling */
+ /* Header Styling */
+ .retro-header {
+     background-color: black;
+     /* Dark black background */
+     color: #00ff00;
+     /* Neon green text */
+     font-family: 'Press Start 2P', monospace;
+     /* Retro pixel font */
+     text-transform: uppercase;
+     /* Capitalize text for retro effect */
+     padding: 10px 20px;
+     /* Add some spacing */
+     position: relative;
+     /* To position the glow effect */
+     box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00;
+     /* Neon green glow */
+ }
+
+ /* Neon Underline Effect */
+ .retro-header::after {
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     /* Position the glow slightly below the header */
+     left: 0;
+     width: 100%;
+     height: 3px;
+     /* Thickness of the glow line */
+     background: linear-gradient(90deg, #00ff00 0%, transparent 100%);
+     /* Neon glow gradient */
+     box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00;
+     /* Spread the glow effect */
+ }
+
+ /* Navigation Links */
+ .navbar-nav .nav-link {
+     color: #00ff00;
+     /* Neon green links */
+     font-weight: bold;
+     padding: 0 15px;
+     text-decoration: none;
+     transition: color 0.3s ease, text-shadow 0.3s ease;
+ }
+
+ .navbar-nav .nav-link:hover {
+     color: #ff3131;
+     /* Bright red on hover */
+     text-shadow: 0 0 10px #ff3131;
+     /* Glowing red text on hover */
+ }
+
+ /* Navbar Title */
+ .navbar-text {
+     color: #00ff00;
+     font-size: 1.5rem;
+     /* Slightly larger font size for the name */
+     text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00;
+     /* Neon glow effect for the text */
+ }
+
+ /*`*/
+ .App-link {
+     color: #61dafb;
+ }
+
+ .navBar {
+     background-color: black;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+     font-family: Arial, sans-serif;
+ }
+
+ #education,
+#introductionDiv
+ #professionalSummary,
+ #merc,
+ #wrafb,
+ #StemTeacher {
+     height: 100vh;
+     /* Full viewport height */
+     display: flex;
+     justify-content: bottom;
+     /* Center content horizontally */
+     align-items: right;
+     /* Center content vertically */
+     background-color: #121111;
+     /* Add your preferred background color */
+     padding: 20px;
+     box-shadow: #282c34;
+     margin-bottom: 40px;
+     /* Adds spacing between each section */
+     padding-bottom: 20px;
+     /* Optional padding for extra spacing */
+ }
+
+ body,
+ .introduction,
+ .section-title,
+ .card-title {
+     font-family: 'Press Start 2P', monospace;
+ }
+
+ .card-title,
+ .introduction h1,
+ .introduction h4 {
+     color: #00ff00;
+     /* Neon green */
+     text-shadow: 0 0 10px #eb2cab, 0 0 20px #2003da;
+ }
+
+
+
+ /* Styling for Individual Child Divs */
+ #encapsulation>div {
+     background: rgba(26, 26, 26, 0.95);
+     /* Darker background for contrast */
+     padding: 20px;
+     margin: 20px 0;
+     border-radius: 10px;
+     border: 2px solid #00ff00;
+     box-shadow:
+         inset 0 0 15px #000000,
+         /* Recessed shadow inside the card */
+         0 0 15px #00ff00;
+     /* Outer neon glow for contrast */
+     color: white;
+     /* White text for readability */
+     font-family: 'Press Start 2P', monospace;
+     text-align: center;
+     transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+ }
+
+ /* Neon Glow Hover Effect for Each Section */
+ /*#encapsulation>div:hover {
+  transform: scale(1.05);
+  /* Slight scale up effect */
+ /*  box-shadow:
+    inset 0 0 20px #000000,
+    0 0 20px #00ff00,
+    0 0 50px #00ff00;
+  border-color: #00ff00;
+}*/
+ .section-title {
+     display: inline-block;
+     /* Makes the element only take up the text size */
+     padding: 10px;
+     /* Optional padding for spacing */
+     font-size: 2rem;
+     /* Adjust size if needed */
+     font-family: 'Press Start 2P', monospace;
+     color: #00ff00;
+     /* Neon green text */
+     text-align: center;
+
+     /* Double Shadow Effect */
+     text-shadow:
+         0 0 5px #00ff00,
+         /* First shadow close to the text */
+         0 0 15px #0008ffbf,
+         /* Second shadow further away for glow effect */
+         0 0 25px #f60ede80;
+     /* Third layer for a stronger glow */
+
+     /* Optional Background Effect (Retro Double Outline) */
+     box-shadow:
+         0 0 10px #0008ffbf,
+         /* Outer neon glow */
+         0 0 20px #f60ede80 inset;
+     /* Inner shadow for depth */
+
+     border-radius: 5px;
+     /* Optional rounded edges */
+     margin: 20px 0;
+     /* Add spacing around the title */
+ }
+
+ /* Introduction Section Styling */
+ /* .introductionDiv {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 2rem;
+     background-position: "cover";
+     background-position: center;
+     object-fit: cover;
+
+ } */
+
+
+ .introduction {
+     position: absolute;
+     top: 35%;
+     left: 60%;
+     width: 350px;
+     height: auto;
+     background-color: black;
+     /* Black background for the retro theme */
+     border: 2px solid neon-green;
+     border-radius: 10px;
+     color: #00ff00;
+     /* Neon green text */
+     font-family: 'Press Start 2P', monospace;
+     /* Pixelated font */
+     text-align: center;
+     padding: 20px;
+     box-shadow: 0 0 20px #00ff00;
+     z-index: 10;
+
+
+ }
+
+ /* Cards Styling */
+ .card {
+     background: rgba(26, 26, 26, 0.95);
+     border: 2px solid #00ff00;
+     border-radius: 10px;
+     box-shadow: 0 0 15px #00ff00;
+ }
+
+ /* Responsive Design Adjustments */
+ /* @media (max-width: 768px) {
+     .introductionDiv {
+         padding: 20px;
+         text-align: center;
+     }
+
+     .card {
+         padding: 15px;
+         font-size: 0.9rem;
+     }
+
+     .section-title h3 {
+         font-size: 1.5rem;
+     }
+ } */
+
+ .card-body {
+     font-family: 'Press Start 2P', monospace;
+     /* Retro font */
+     font-size: 0.9rem;
+     /* Slightly smaller text for readability */
+     line-height: 1.5;
+     /* Adjust line height for better spacing */
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Press Start 2P', monospace;
+     background: radial-gradient(circle, #000000, #1a1a1a, #000000);
+     color: #00ff00;
+     overflow-x: hidden;
+ }
+
+ .introduction h1,
+ .introduction h4,
+ .introduction p {
+     margin: 10px 0;
+     line-height: 1.6;
+ }
+
+ .contact-info {
+     margin-top: 10px;
+     font-size: 0.8rem;
+     /* Smaller pixelated text */
+     text-align: left;
+     color: #00ff00;
+ }
+
+ .contact-info a {
+     color: #00ff00;
+     text-decoration: none;
+ }
+
+ .contact-info a:hover {
+     text-decoration: underline;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     height: 100vh;
+     background: radial-gradient(circle, #000000, #1a1a1a, #000000);
+     /* Dark radial gradient for depth */
+     background-size: cover;
+     overflow-x: hidden;
+     font-family: 'Press Start 2P', monospace;
+     /* Retro pixel font */
+     color: #00ff00;
+     /* Neon green text */
+     animation: pulseBackground 8s infinite alternate ease-in-out;
+ }
+
+ /* Animation for a Soft Pulsing Glow Effect */
+ @keyframes pulseBackground {
+     0% {
+         background: radial-gradient(circle, #000000, #1a1a1a, #000000);
+         box-shadow:
+             0 0 30px #00ff00,
+             0 0 60px #00ff00;
+     }
+
+     50% {
+         background: radial-gradient(circle, #000000, #000000, #1a1a1a);
+         box-shadow:
+             0 0 50px #00ff00,
+             0 0 100px #00ff00;
+     }
+
+     100% {
+         background: radial-gradient(circle, #000000, #1a1a1a, #000000);
+         box-shadow:
+             0 0 30px #00ff00,
+             0 0 60px #00ff00;
+     }
+ }
+
+ .introduction {
+     animation: flicker 1.5s infinite;
+ }
+
+ /* 
+@keyframes flicker {
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+
+  20%,
+  24%,
+  55% {
+    opacity: 0;
+  }
+} */
+ /* Button in the bottom right corner */
+ .popup-button {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: #00ff00;
+     color: black;
+     font-family: 'Press Start 2P', monospace;
+     font-size: 12px;
+     padding: 10px 20px;
+     border: 2px solid #00ff00;
+     border-radius: 5px;
+     cursor: pointer;
+     text-align: center;
+     box-shadow: 0 0 10px #00ff00;
+     z-index: 10000;
+ }
+
+ /* Button hover effect */
+ /*.popup-button:hover {
+  background-color: black;
+  color: #00ff00;
+}*/
+
+ /* Pop-up content */
+ .popup-content {
+     position: fixed;
+     bottom: 60px;
+     /* Just above the button */
+     right: 20px;
+     background-color: black;
+     color: #00ff00;
+     font-family: 'Press Start 2P', monospace;
+     font-size: 12px;
+     padding: 15px;
+     border: 2px solid #00ff00;
+     border-radius: 5px;
+     box-shadow: 0 0 10px #00ff00;
+     z-index: 1000;
+     text-align: left;
+     min-width: 200px;
+ }
+
+ /* Links inside the pop-up */
+ .popup-content a {
+     color: #00ff00;
+     text-decoration: none;
+ }
+
+ .popup-content a:hover {
+     text-decoration: underline;
+ }
+
+ /* Retro Header Styling */
+ .retro-header {
+     background-color: black;
+     border-bottom: 2px solid #00ff00;
+     box-shadow: 0 0 20px #00ff00;
+     padding: 10px;
+ }
+
+ /* Retro Title Styling */
+ .retro-title {
+     color: #00ff00 !important;
+     font-family: 'Press Start 2P', monospace;
+     text-shadow: 0 0 10px #00ff00;
+ }
+
+ /* Retro Link Styling */
+ .retro-link {
+     color: #00ff00 !important;
+     font-family: 'Press Start 2P', monospace;
+     text-shadow: 0 0 10px #00ff00;
+     transition: color 0.3s ease-in-out;
+ }
+
+ /*.retro-link:hover {
+  color: white !important;
+  text-shadow: 0 0 20px #00ff00;
+}*/
+
+ /* Hamburger Button Custom Styling */
+ .navbar-toggler {
+     border: 2px solid #00ff00 !important;
+ }
+
+ .navbar-toggler-icon {
+     filter: brightness(0) saturate(100%) invert(74%) sepia(85%) saturate(7443%) hue-rotate(80deg) brightness(100%) contrast(105%);
+ }
