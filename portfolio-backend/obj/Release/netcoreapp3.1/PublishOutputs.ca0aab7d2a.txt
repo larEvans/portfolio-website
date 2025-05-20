@@ -1,0 +1,7 @@
+C:\portfolio-website\publish\PortfolioBackend.exe
+C:\portfolio-website\publish\appsettings.Development.json
+C:\portfolio-website\publish\appsettings.json
+C:\portfolio-website\publish\PortfolioBackend.dll
+C:\portfolio-website\publish\PortfolioBackend.deps.json
+C:\portfolio-website\publish\PortfolioBackend.runtimeconfig.json
+C:\portfolio-website\publish\PortfolioBackend.pdb

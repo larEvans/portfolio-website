@@ -23,49 +23,55 @@ namespace PortfolioBackend
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddCors(options =>
+        public void ConfigureServices(IServiceCollection services)
         {
-            options.AddPolicy("AllowReactApp", builder =>
-            {
-                builder.WithOrigins("http://localhost:3000")
-                    .AllowAnyHeader()
-                    .AllowAnyMethod();
-            });
-        });
-        services.AddControllers();
-    }
+            // services.AddCors(options =>
+            // {
+            //     options.AddPolicy("AllowReactApp", builder =>
+            //     {
+            //         builder.WithOrigins("http://localhost:3000")
+            //             .AllowAnyHeader()
+            //             .AllowAnyMethod();
+            //     });
+            // });
+            // services.AddControllers();
+            services.AddCors(options =>
+      options.AddDefaultPolicy(b =>
+        b.WithOrigins("https://larEvans.github.io")
+         .AllowAnyMethod()
+         .AllowAnyHeader()
+      )
+    );
+            services.AddControllers();
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-    {
-        if (env.IsDevelopment())
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseDeveloperExceptionPage();
+            if (env.IsDevelopment())
+                app.UseDeveloperExceptionPage();
+            else
+                app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            // Serve index.html by default
+            app.UseDefaultFiles();    // will look for index.html
+            app.UseStaticFiles();     // serve everything under wwwroot/
+
+            // Apply your named CORS policy
+            app.UseCors("AllowReactApp");
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+
+                // ANY non-API route falls back to index.html
+                endpoints.MapFallbackToFile("index.html");
+            });
         }
-        else
-        {
-            app.UseHttpsRedirection();
-        }
-
-        app.UseRouting();
-
-        // Enable serving static files (including your React app build)
-        app.UseDefaultFiles(); // Looks for index.html by default
-        app.UseStaticFiles();
-
-        app.UseCors("AllowReactApp");
-
-        app.UseAuthorization();
-
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapControllers();
-
-            // Map all other requests to the React app (SPA fallback)
-            endpoints.MapFallbackToFile("Index.js");
-        });
-        } 
     }
+
 }
