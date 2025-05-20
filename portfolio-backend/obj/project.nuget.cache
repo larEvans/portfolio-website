@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bFMds4b0O4Q=",
+  "dgSpecHash": "HWCTNgkDGGs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\larso\\OneDrive\\work\\portfolio\\Portfolio-Website\\PortfolioBackend\\PortfolioBackend.csproj",
+  "projectFilePath": "C:\\portfolio-website\\portfolio-backend\\PortfolioBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\larso\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
     "C:\\Users\\larso\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",

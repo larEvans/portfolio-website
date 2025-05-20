@@ -20,15 +20,15 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {/* Links in the Navbar */}
-            <Nav.Link as={Link} to="/Resume" className="retro-link">
+            <Nav.Link as={Link} to="/Index" className="retro-link">
               Resume
             </Nav.Link>
-            <Nav.Link as={Link} to="/portfolio" className="retro-link">
+           { /*<Nav.Link as={Link} to="/portfolio" className="retro-link">
               Portfolio
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" className="retro-link">
               Contact
-            </Nav.Link>
+            </Nav.Link>]*/}
           </Nav>
         </Navbar.Collapse>
       </Container>

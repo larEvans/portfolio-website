@@ -1,7 +1,7 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/App.css";
-const Resume = () => {
+const Index = () => {
   return (
     <div className="container mt-5 mb-5 ">
       {/* Background Section */}
@@ -207,4 +207,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Index;

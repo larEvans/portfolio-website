@@ -1,5 +1,5 @@
 // src/components/Navbar.js
-
+//this is not beign used it has ben replasced by the navbar. will delete after this push
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';

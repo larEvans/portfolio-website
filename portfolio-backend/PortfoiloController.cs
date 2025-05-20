@@ -4,7 +4,7 @@ using PortfolioBackend.Models;
 using System.Collections.Generic;
 
 namespace PortfolioBackend.Controllers
-{
+{//this si a work in progress
     [Route("api/[controller]")]
     [ApiController]
     public class PortfolioController : ControllerBase
@@ -18,7 +18,7 @@ namespace PortfolioBackend.Controllers
         private static Resume resume = new Resume
         {
             Id = 1,
-            FilePath = "https://yourwebsite.com/resume.pdf",
+            FilePath = "resume.pdf",
             Description = "Software Engineer with expertise in full-stack development."
         };
 

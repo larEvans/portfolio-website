@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\larso\\OneDrive\\work\\portfolio\\Portfolio-Website\\PortfolioBackend\\PortfolioBackend.csproj",
+      "projectUniqueName": "C:\\portfolio-website\\portfolio-backend\\PortfolioBackend.csproj",
       "projectName": "PortfolioBackend",
-      "projectPath": "C:\\Users\\larso\\OneDrive\\work\\portfolio\\Portfolio-Website\\PortfolioBackend\\PortfolioBackend.csproj",
+      "projectPath": "C:\\portfolio-website\\portfolio-backend\\PortfolioBackend.csproj",
       "packagesPath": "C:\\Users\\larso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\larso\\OneDrive\\work\\portfolio\\Portfolio-Website\\PortfolioBackend\\obj\\",
+      "outputPath": "C:\\portfolio-website\\portfolio-backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\larso\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -64,7 +64,7 @@ namespace PortfolioBackend
             endpoints.MapControllers();
 
             // Map all other requests to the React app (SPA fallback)
-            endpoints.MapFallbackToFile("resume.js");
+            endpoints.MapFallbackToFile("Index.js");
         });
         } 
     }

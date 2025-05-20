@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = PortfolioBackend
-build_property.ProjectDir = C:\Users\larso\OneDrive\work\portfolio\Portfolio-Website\PortfolioBackend\
+build_property.ProjectDir = C:\portfolio-website\portfolio-backend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
