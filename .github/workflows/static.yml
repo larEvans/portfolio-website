@@ -30,8 +30,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'       # or whichever LTS you use
+          node-version: '18'
           cache: 'npm'
+          cache-dependency-path: 'portfolio-frontend/package-lock.json'
 
       # 3) Install & build the React app
       - name: Install & build front-end
@@ -48,7 +49,7 @@ jobs:
           cp -R portfolio-frontend/build/* docs/
           touch docs/.nojekyll
 
-      # 5) Configure Pages (no changes needed)
+      # 5) Configure Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -58,8 +59,7 @@ jobs:
         with:
           path: docs
 
-      # 7) Deploy to Pages
+      # 7) Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
