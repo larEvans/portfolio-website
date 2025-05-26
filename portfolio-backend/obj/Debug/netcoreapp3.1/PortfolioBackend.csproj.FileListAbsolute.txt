@@ -69,3 +69,8 @@ C:\portfolio-website\portfolio-backend\obj\Debug\netcoreapp3.1\staticwebassets\m
 C:\portfolio-website\portfolio-backend\obj\Debug\netcoreapp3.1\PortfolioBackend.dll
 C:\portfolio-website\portfolio-backend\obj\Debug\netcoreapp3.1\PortfolioBackend.pdb
 C:\portfolio-website\portfolio-backend\obj\Debug\netcoreapp3.1\PortfolioBackend.genruntimeconfig.cache
+C:\portfolio-website\portfolio-backend\bin\Debug\netcoreapp3.1\publish\web.config
+C:\portfolio-website\portfolio-backend\bin\Debug\netcoreapp3.1\publish\appsettings.Development.json
+C:\portfolio-website\portfolio-backend\bin\Debug\netcoreapp3.1\publish\appsettings.json
+C:\portfolio-website\portfolio-backend\bin\Debug\netcoreapp3.1\publish\PortfolioBackend.deps.json
+C:\portfolio-website\portfolio-backend\bin\Debug\netcoreapp3.1\publish\PortfolioBackend.runtimeconfig.json

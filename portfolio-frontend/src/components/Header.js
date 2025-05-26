@@ -1,39 +1,39 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // or your router of choice
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../pages/css/App.css";
+export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
 
-function Header() {
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <Navbar expand="lg" className="navbar retro-header navbar-dark">
-      <Container>
-        {/* Navbar Brand (Right Side Name) */}
-        <Navbar.Brand as={Link} to="/" className="retro-title">
-          Larson Evans
-        </Navbar.Brand>
-
-        {/* Hamburger Toggle Button */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
-        {/* Collapsible Navbar Content */}
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            {/* Links in the Navbar */}
-            <Nav.Link as={Link} to="/Index" className="retro-link">
-              Resume
-            </Nav.Link>
-           { /*<Nav.Link as={Link} to="/portfolio" className="retro-link">
-              Portfolio
-            </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="retro-link">
-              Contact
-            </Nav.Link>]*/}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
+      <div className="header-inner">
+        <div className="logo">LJE</div>
+        <nav>
+          <ul className="nav-list">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/Projects">Projects</Link>
+            </li>
+            {/* <li>
+              <Link to="/contact" className="btn-call">
+                Book a Call
+              </Link>
+            </li> */}
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 }
-
-export default Header;
