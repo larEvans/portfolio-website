@@ -1,12 +1,9 @@
 // src/pages/Projects.js
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import Header from '../components/Header'; // Import the header
-// src/components/Projects.js
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 import { Octokit } from "@octokit/rest";
 
-// instantiate Octokit with a token (to avoid strict rate-limits)
+
 const octokit = new Octokit({
   auth: process.env.REACT_APP_GITHUB_TOKEN
 });
@@ -18,7 +15,7 @@ export default function Projects() {
   useEffect(() => {
     async function loadRepos() {
       try {
-        // if you want org repos:
+        // org repos:
 
         // if you wanted a user’s repos instead, use:
         const { data } = await octokit.repos.listForUser({ username: "larEvans", per_page: 100 });

@@ -314,18 +314,18 @@ a:hover {
 }
 .hero-content .container {
     padding: 0 2rem;
-    /* left/right breathing room */
+
 }
 
 /* Section titles can also use some side padding */
 .section-title {
     padding: 0 2rem;
-    /* keeps those titles aligned with body text */
+
 }
 /* Only Projects page card-bodies go solid black */
 #projects-page .card-body {
     background-color: #000 !important;
-    /* you can also adjust padding or color here if needed */ }
+  }
 /* Footer Section */
 .footer-section {
     background: rgba(0, 0, 0, 0.95);
