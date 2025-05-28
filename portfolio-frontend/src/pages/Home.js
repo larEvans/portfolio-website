@@ -104,7 +104,7 @@ const Home = () => {
               Mercer Engineering Research Center – Software Developer
             </h5>
             <p>
-              <em>June 2023 – Feb 2025</em> | Warner Robins, GA
+              <em>June 2023 – November 2024</em> | Warner Robins, GA
             </p>
             <ul>
               <li>
