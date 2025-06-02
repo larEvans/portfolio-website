@@ -1,25 +1,29 @@
 // src/pages/Projects.js
-import React, { useEffect, useState } from 'react';
-
+import React, { useEffect, useState } from "react";
 import { Octokit } from "@octokit/rest";
-
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import ContactPopup from "../components/ContactPopup";
 
 const octokit = new Octokit({
-  auth: process.env.REACT_APP_GITHUB_TOKEN
+  auth: process.env.REACT_APP_GITHUB_TOKEN,
 });
 
 export default function Projects() {
   const [repos, setRepos] = useState([]);
   const [error, setError] = useState(null);
+  const [showContact, setShowContact] = useState(false);
+
+  const togglePopup = (state) => {
+    setShowContact(state);
+  };
 
   useEffect(() => {
     async function loadRepos() {
       try {
-        // org repos:
-
-        // if you wanted a user’s repos instead, use:
-        const { data } = await octokit.repos.listForUser({ username: "larEvans", per_page: 100 });
-
+        const { data } = await octokit.repos.listForUser({
+          username: "larEvans",
+          per_page: 100,
+        });
         setRepos(data);
       } catch (err) {
         console.error(err);
@@ -63,6 +67,40 @@ export default function Projects() {
         ))}
       </div>
 
+      <footer className="footer-section text-center py-5">
+        <div className="container">
+          <h2 className="footer-heading mb-3">
+            From Concept to <span className="highlight">CREATION</span>
+            <br />
+            Let’s Make It <span className="highlight">HAPPEN!</span>
+          </h2>
+
+          <button
+            type="button"
+            className="btn btn-cta mb-4"
+            onClick={() => togglePopup(true)}
+          >
+            Get In Touch <span className="btn-arrow">→</span>
+          </button>
+
+          <div className="social-icons mt-4">
+            <a href="https://github.com/larEvans" aria-label="GitHub">
+              <FaGithub size={24} />
+            </a>
+            <a
+              href="https://linkedin.com/in/larson-evans"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={24} />
+            </a>
+            <a href="mailto:larson.evans@example.com" aria-label="Email">
+              <FaEnvelope size={24} />
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      {showContact && <ContactPopup onClose={() => togglePopup(false)} />}
     </section>
   );
 }
